@@ -34,7 +34,6 @@ Built on eGov DIGIT packages (`digit_ui_components`, `digit_forms_engine`, `digi
 
 ## Conventions
 - All user-visible text: `context.translate(i18.<group>.<key>)`, keys in `lib/utils/i18_key_constants.dart` (imported `as i18`). No hard-coded strings.
-- Livelihood ports AMC screens from this app, so don't rename existing i18n key strings; mention behaviour changes to AMC in your summary.
 - Backend not ready or unclear → stop and list it as a question for the backend team. Do not write backend code (`../backend/` is out of scope).
 - Inject repositories through optional constructor params (`{ScheduledVisitRepository? repository}`, `{Dio? dio}`) so tests can pass fakes.
 - Guard async UI/bloc work against stale responses (`_requestGeneration` counter, see `ScheduledVisitBloc`).
